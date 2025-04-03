@@ -1,22 +1,16 @@
-/* src/App.css */
 
 body {
-  background-color: #f0f8ff;
-  font-family: 'Arial', sans-serif;
-  margin: 20px;
+  background-color: #f0f8ff;      /* changing background to light blue */
+  font-family: 'Arial', sans-serif; /* font */
+  margin: 20px;                   /* add spacing */
 }
 
 .game {
   display: flex;
-  flex-direction: row;
-}
-
-.game-board {
-  margin-right: 20px;
-}
-
-.game-info {
-  font-size: 16px;
+  flex-direction: row;            /* placing */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;                      /* spacing */
 }
 
 .board-row {
@@ -24,27 +18,34 @@ body {
 }
 
 .square {
-  background: #fff;
-  border: 2px solid #999;
-  font-size: 24px;
-  font-weight: bold;
+  background: #fff;               /* we do white background for squares */
+  border: 2px solid #999;         /* gray borders */
+  font-size: 24px;                /* size for moves */
+  font-weight: bold;              /* bold */
   height: 60px;
   width: 60px;
   cursor: pointer;
   margin-right: -1px;
   margin-top: -1px;
   text-align: center;
+  transition: background 0.2s;     /* transition */
 }
 
 .square:hover {
-  background: #ddd;
+  background: #ddd;               /* darker when hovering */
 }
 
 .highlight {
-  background: yellow;
+  background: rgb(255, 0, 153);             /* pink background for winning line */
 }
 
-.selected-move {
-  font-weight: bold;
-  color: red;
+.game-info {
+  font-size: 16px;              
 }
+.selected-move {
+  font-weight: bold;              
+  color: rgb(102, 255, 0);                     /* green text to easily identify it */
+}
+
+
+
